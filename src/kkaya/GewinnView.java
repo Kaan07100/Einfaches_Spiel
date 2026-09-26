@@ -17,6 +17,7 @@ public class GewinnView extends JFrame {
         computerZahlFeld = new JTextField();
         computerZahlFeld.setEditable(false);
         nochmalButton = new JButton("Noch einmal!");
+        nochmalButton.setEnabled(false);
         gesamtPunkteLabel.setOpaque(true);
         gesamtPunkteLabel.setBackground(Color.WHITE);
         rundenErgebnisLabel.setOpaque(true);

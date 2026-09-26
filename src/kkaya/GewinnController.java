@@ -26,6 +26,8 @@ public class GewinnController {
             view.getGesamtPunkteLabel().setText(
                     String.valueOf(model.getGesamtPunkte())
             );
+            view.getSpielerZahlFeld().setEditable(false);
+            view.getNochmalButton().setEnabled(true);
         } catch (NumberFormatException e) {
         }
     }
@@ -33,5 +35,7 @@ public class GewinnController {
         view.getSpielerZahlFeld().setText("");
         view.getComputerZahlFeld().setText("");
         view.getRundenErgebnisLabel().setText("");
+        view.getSpielerZahlFeld().setEditable(true);
+        view.getNochmalButton().setEnabled(false);
     }
 }
