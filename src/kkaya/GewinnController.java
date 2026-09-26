@@ -7,6 +7,7 @@ public class GewinnController {
         this.model = model;
         this.view = view;
         view.getSpielerZahlFeld().addActionListener(e -> rundeSpielen());
+        view.getNochmalButton().addActionListener(e -> neueRunde());
     }
     private void rundeSpielen() {
         try {
@@ -27,5 +28,10 @@ public class GewinnController {
             );
         } catch (NumberFormatException e) {
         }
+    }
+    private void neueRunde() {
+        view.getSpielerZahlFeld().setText("");
+        view.getComputerZahlFeld().setText("");
+        view.getRundenErgebnisLabel().setText("");
     }
 }

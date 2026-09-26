@@ -11,8 +11,8 @@ public class GewinnView extends JFrame {
     public GewinnView() {
         setTitle("Zahlen-Gewinnspiel");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        gesamtPunkteLabel = new JLabel("Gesamtpunkte: 30");
-        rundenErgebnisLabel = new JLabel("Rundenergebnis: ");
+        gesamtPunkteLabel = new JLabel("30");
+        rundenErgebnisLabel = new JLabel("");
         spielerZahlFeld = new JTextField();
         computerZahlFeld = new JTextField();
         computerZahlFeld.setEditable(false);
